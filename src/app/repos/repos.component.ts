@@ -1,3 +1,4 @@
+import { ApiService } from './../api.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReposComponent implements OnInit {
 
-  constructor() { }
+  repo: any = []
+
+  constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
+  }
+
+  getPublicRepos(repository: string){
+    this.apiService.getRepo(repository).then((repo:any)=>{
+      this.repo = repo
+      console.log(repo);
+      
+    })
   }
 
 }
