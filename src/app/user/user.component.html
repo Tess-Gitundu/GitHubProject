@@ -1,8 +1,8 @@
 <div class="container">
-<form>
+<form (submit)="userSearch()">
     <div class="mb-3">
       <label for="User name" class="form-label">User Name</label>
-      <input type="text" class="form-control" id="username" aria-describedby="user">
+      <input [formControl]="name" type="text" class="form-control" id="username" aria-describedby="user">
     </div>
     <button type="submit" class="btn btn-primary">Search</button>
   </form>
