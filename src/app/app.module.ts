@@ -9,13 +9,15 @@ import { UserComponent } from './user/user.component';
 import { ReposComponent } from './repos/repos.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DayscountPipe } from './dayscount.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     ReposComponent,
-    NavbarComponent
+    NavbarComponent,
+    DayscountPipe
   ],
   imports: [
     BrowserModule,
