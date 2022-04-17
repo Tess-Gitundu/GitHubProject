@@ -11,10 +11,13 @@ export class ApiService {
   }
 
   getUsername(username:string){
-    return username
+    
   }
 
- getRepo( username: string  ):any{
-   return this.http.get(`https://api.github.com/users/${username}/repos`)
+ getUser( username: string  ):any{
+   const promise = new Promise((resolve, reject) => {
+     resolve (this.http.get(`https://api.github.com/users/${username}`).toPromise())
+   })
+   return promise
  }
 }
