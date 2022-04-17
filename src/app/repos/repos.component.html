@@ -1,8 +1,8 @@
 <div class="container">
-<form>
+<form (submit)="repoSearch()">
     <div class="mb-3">
       <label for="Repository name" class="form-label">Repository Name</label>
-      <input type="text" class="form-control" id="reponame" aria-describedby="repository">
+      <input [formControl]="repos" type="text" class="form-control" id="reponame" aria-describedby="repository">
     </div>
     <button type="submit" class="btn btn-primary">Search</button>
   </form>
