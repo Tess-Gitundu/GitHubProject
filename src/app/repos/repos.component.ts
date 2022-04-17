@@ -30,8 +30,8 @@ export class ReposComponent implements OnInit {
     if(!this.repos.valid){
       alert('The repository name is required')
     }
-    let username =this.repos.value
-    this.getPublicRepos(username)
+    let repository =this.repos.value
+    this.getPublicRepos(repository)
     return false;
   }
 

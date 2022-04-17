@@ -7,3 +7,10 @@
     <button type="submit" class="btn btn-primary">Search</button>
   </form>
 </div>
+<div class="container">
+  <ul *ngFor="let repo of repo">
+    <li>
+      <a href="{{ repo.html_url}}">{{ repo.full_name }}</a>
+    </li>
+  </ul>
+</div>
