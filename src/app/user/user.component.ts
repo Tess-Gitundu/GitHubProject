@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
 
-  user = []
+  user: any = []
 
   constructor(private apiService: ApiService) { }
 
