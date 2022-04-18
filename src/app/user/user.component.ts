@@ -1,7 +1,7 @@
 import { ApiService } from './../api.service';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-
+import { HighlightDirective } from '../highlight.directive';
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',

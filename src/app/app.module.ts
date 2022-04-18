@@ -11,6 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DayscountPipe } from './dayscount.pipe';
 import { HighlightDirective } from './highlight.directive';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HighlightDirective } from './highlight.directive';
     ReposComponent,
     NavbarComponent,
     DayscountPipe,
-    HighlightDirective
+    HighlightDirective,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
