@@ -1,12 +1,28 @@
+<div class="user">
+  <h1>GitHub Search</h1>
+  <h6>Find family and friends that are on GitHub here!</h6>
+  <img src="/assets/search.jpg" alt="">
+</div>
 <div class="container">
 <form (submit)="userSearch()">
     <div class="mb-3">
       <label for="User name" class="form-label">User Name</label>
-      <input [formControl]="name" type="text" class="form-control" id="username" aria-describedby="user">
+      <input class [formControl]="name" type="text" class="form-control" id="username" aria-describedby="user">
     </div>
     <button type="submit" class="btn btn-primary">Search</button>
   </form>
 </div>
 <div class="container">
-  <a href="{{user.html_url}}?tab=repositories" target="_blank">{{ user.login }}</a>
+ <div class="row profile">
+   <div class="col-md-6">
+     <h5>Click on <a href="{{user.html_url}}?tab=repositories" target="_blank">{{ user.login }}</a>'s name to view their repository</h5>
+     <img src="{{user.avatar_url}}" alt="">
+   </div>
+   <div id="about-user" class="col-md-6">
+    <h5>More details on {{ user.login }} </h5>
+    <p>Name: {{ user.name }}</p>
+    <p>Profile : <a href="{{user.html_url}}?tab=repositories" target="_blank">{{ user.html_url }}</a></p>
+    <p>Repositories: <a href="{{ user.html_url}}">{{ user.full_name }}</a></p>
+   </div>
+ </div>
 </div>

@@ -10,7 +10,7 @@
 <div class="container">
   <ul *ngFor="let repo of repo">
     <li>
-      <a href="{{ repo.html_url}}">{{ repo.full_name }}</a>
+      <a href="{{ repo.html_url}}" >{{ repo.full_name }}</a>
       <p> Created {{ repo.created_at | dayscount}} days ago. </p>
     </li>
   </ul>
