@@ -10,6 +10,7 @@ import { ReposComponent } from './repos/repos.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DayscountPipe } from './dayscount.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DayscountPipe } from './dayscount.pipe';
     UserComponent,
     ReposComponent,
     NavbarComponent,
-    DayscountPipe
+    DayscountPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
